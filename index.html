@@ -195,7 +195,7 @@
                 <a href="/2024/07/25/%E7%BD%91%E7%AB%99%E6%98%AF%E5%B9%B2%E4%BB%80%E4%B9%88%E7%9A%84/">
                     <div class="img">
                         
-                        <img src="/imgs/preview/preview1.jpg" alt="网站是干什么的">
+                        <img src="/imgs/preview/preview2.jpg" alt="网站是干什么的">
                     </div>
                     <div class="info">
                         
@@ -267,6 +267,8 @@
 </div>
 
 <!-- 加上这段代码原因： gitment在首页加载时, 如果找不到对应的控件会报错，此处加上，同时设置为none，防止报错 -->   
+  
+    <div id="comments-template" style="display:none"></div> 
 
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
@@ -489,6 +491,30 @@
 <script src="/js/blog.js"></script>
 
 
+
+
+<script src="https://myau.moe/js/comment/gitment.browser.js"></script>
+<script>
+    if(window.commentConfig) {
+      window.commentConfig.id = ''
+      window.commentConfig.owner = ''
+      window.commentConfig.repo = ''
+      window.commentConfig.client_id = ''
+      window.commentConfig.client_secret = ''
+      window.commentConfig.redirect_uri = ''
+    } else {
+      window.commentConfig = {
+      	id: '',
+        owner: '',
+        repo: '',
+        client_id: '',
+        client_secret: '',
+        redirect_uri: ''
+      }
+    }
+</script>
+
+<script src="/js/comment/gitment.js"></script>
 
 
 </html>
